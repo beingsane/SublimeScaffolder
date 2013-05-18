@@ -1,0 +1,58 @@
+[
+    {
+        "id": "edit",
+        "children":
+        [
+            {
+                "id": "sublime_scaffolder",
+                "caption": "Scaffolder",
+                "children":
+                [
+                    {
+                        "caption": "test",
+                        "command": "sublime_scaffolder",
+                        "args": {"index": "bajs"}
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "SublimeScaffolder",
+                        "children":
+                        [
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/SublimeScaffolder/SublimeScaffolder.sublime-settings"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file", "args":
+                                {
+                                    "file": "${packages}/User/SublimeScaffolder.sublime-settings"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            { "caption": "-" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
