@@ -12,7 +12,8 @@ you can do that aswell.
 #2 How do I use SublimeScaffolder?
 
 It's simple just press ctrl+shift+k followed by: ctrl+shift+s and a menu with your defined scaffolds will show up, select
-the one you want to create and press enter, after that you specify where you want it to be created. 
+the one you want to create and press enter, after that you specify where you want it to be created.
+When SublimeScaffolder is done setting up your scaffold it will create a new Sublime-project file for you which you can edit and save where you want.
 
 
 #3 How do i configure SublimeScaffolder?
@@ -41,7 +42,7 @@ You can also specify if the file should have contents copied from somewhere on y
 Or if you want to download contents from the web and put in your file you do like this:
 <pre>
 {'file':'filename.extension', 'url': "url-to-file"}
-</ptr>
+</pre>
 
 *FOLDERS*
 Folders look pretty much like the whole scaffold, they have two attributes:
@@ -57,3 +58,8 @@ So a folder could look something like this:
     ]
 }
 </pre>
+
+If you get stuck you can always have a look in: Preferences -> Package Settings -> SublimeScaffolder -> Settings - Default
+
+
+
