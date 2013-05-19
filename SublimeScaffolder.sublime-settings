@@ -1,48 +1,26 @@
 {
-    "default_folder": "F:/Projects/",
+    "default_folder": "Not set yet!",
     "scaffolds": [
         {
-            "name": "Simple PHP Project",
+            "name": "Simple Python Project",
             "contents": [
-                {"file":"index.php"},
-                {"file":"config.php"},
                 {"file":"README.txt"},
                 {
-                    "folder":"resources",
+                    "folder":"src",
                     "contents": [
+                        {"file":"main.py"},
                         {
-                            "folder":"style",
+                            "folder":"src",
                             "contents": [
-                                {"file":"main.css"},
-                                {"file":"mobile.css"},
-                                {"file":"bootstrap.css", "copy_from":"H:/server/www/sites/pruned/svenskapache/wp-content/themes/twentyten/style.css"}
-                            ]
-                        }, 
-                        {
-                            "folder":"scripts",
-                            "contents": [
-                                {"file":"interface.js"},
-                                {"file": "jquery.js", "url": "http://code.jquery.com/jquery-1.9.1.min.js"}
+                                {"file":"main.py"}       
                             ]
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name": "Simple Scala Project",
-            "contents": [
-                {"file":"Main.scala"},
-                {"file":"README.txt"},
+                },
                 {
-                    "folder":"build",
+                    "folder":"tests",
                     "contents": [
-                        {
-                            "folder":"classes"
-                        }, 
-                        {
-                            "folder":"out"
-                        }
+                        {"file":"main_tests.py"}
                     ]
                 }
             ]
