@@ -10,4 +10,43 @@ that you know that you will use, if you want to download a file from the interne
 you can do that aswell.
 
 #2 How do I use SublimeScaffolder?
- 
+
+It's simple just press ctrl+shift+k followed by: ctrl+shift+s and a menu with your defined scaffolds will show up, select
+the one you want to create and press enter, after that you specify where you want it to be created. 
+
+
+#3 How do i configure SublimeScaffolder?
+
+It's super easy, first you need to define a default folder in the settings Preferences -> Package Settings -> SublimeScaffolder -> Settings - User.
+there you define the default_folder (This is just so that you dont have to type in the whole path all the time, which you could do if you want).
+Then you define your scaffolds.
+
+#4 Defining a scaffold:
+
+Each scaffold has a name, so that you have something pretty and identifiable in the list of scaffolds.
+And each scaffold has a contents object, within the contents objects you can define folders and files
+
+*FILES
+A file looks like this:
+{'file':'filename.extension'}
+
+You can also specify if the file should have contents copied from somewhere on your harddrive like this:
+{'file':'filename.extension', 'copy_from': "path_to_file_to_copy_contents_from"}
+
+Or if you want to download contents from the web and put in your file you do like this:
+{'file':'filename.extension', 'url': "url-to-file"}
+
+
+*FOLDERS
+Folders look pretty much like the whole scaffold, they have two attributes:
+folder - which is the folder name
+contents - what the folder should contain
+
+So a folder could look something like this:
+
+{
+    "folder":"src",
+    "contents": [
+        {'file':'filename.extension'}        
+    ]
+}

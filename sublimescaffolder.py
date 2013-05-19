@@ -8,22 +8,34 @@ class SublimeScaffoldMenuCommand(sublime_plugin.WindowCommand):
 
     def __init__(self, window):
         self.win = window
+
+    def run(self):
         sets = sublime.load_settings("SublimeScaffolder.sublime-settings")
         self.scaffolds = sets.get("scaffolds")
         self.project_root = sets.get("default_folder", "")
 
-    def run(self):
+        if self.project_root == "":
+            sublime.status_message("No default folder defined!")
+            return
+        if self.scaffolds is None:
+            sublime.status_message("No scaffolds defined!")
+            return
+        
         self.win.show_quick_panel(self.get_scaffolds(), self.select_path)
 
     def get_scaffolds(self):
         return [scaffold["name"] for scaffold in self.scaffolds]
 
     def select_path(self, idx):
+        if idx == -1:
+            sublime.status_message("Cancelled scaffolding.")
+            return
+        
         self.selected_scaffold = self.scaffolds[idx]
         self.win.show_input_panel("Where should i create the scaffold?", self.project_root, self.create_scaffold, None, self.on_cancel)
 
     def on_cancel(self):
-        print "Cancelled scaffolding."
+        sublime.status_message("Cancelled scaffolding.")
         self.selected_index = None
 
     def create_scaffold(self, path):

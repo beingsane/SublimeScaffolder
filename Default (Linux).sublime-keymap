@@ -1,5 +1,5 @@
 [
     {
-        
+        "keys": ["ctrl+shift+k", "ctrl+shift+s"], "command": "sublime_scaffold_menu"       
     }
 ]

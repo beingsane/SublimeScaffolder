@@ -1,5 +1,5 @@
 {
-    "default_folder": "Not set yet!",
+    "default_folder": "Change this path, to something reasonable!",
     "scaffolds": [
         {
             "name": "Simple Python Project",
@@ -9,12 +9,7 @@
                     "folder":"src",
                     "contents": [
                         {"file":"main.py"},
-                        {
-                            "folder":"src",
-                            "contents": [
-                                {"file":"main.py"}       
-                            ]
-                        }
+                        {"file":"downloaded.py", "url":"https://raw.github.com/whalenut/SublimeScaffolder/master/sublimescaffolder.py"}
                     ]
                 },
                 {

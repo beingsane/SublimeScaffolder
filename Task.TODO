@@ -6,8 +6,10 @@ SublimeScaffolder first steps:
   ✔ Read from configuration-file @done (13-05-18 14:24)
 
 SublimeScaffolder development:
- ☐ Decide how a scaffold shold be defined
-   ☐ Create directories and files on passed path
-   ☐ Copy files from decided path
-   ☐ Download files from the internet
-   ☐ Dynamically fill the menu with scaffolds from the configuration.
+ ✔ Decide how a scaffold shold be defined @done (13-05-19 21:24)
+   ✔ Create directories and files on passed path @done (13-05-19 19:40)
+   ✔ Copy files from decided path @done (13-05-19 21:24)
+   ✔ Download files from the internet @done (13-05-19 21:24)
+
+Tests:
+  ☐ Write Tests...
