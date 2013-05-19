@@ -26,27 +26,34 @@ Then you define your scaffolds.
 Each scaffold has a name, so that you have something pretty and identifiable in the list of scaffolds.
 And each scaffold has a contents object, within the contents objects you can define folders and files
 
-*FILES
-A file looks like this:
+*FILES*
+A file looks like this:<br/>
+<pre>
 {'file':'filename.extension'}
+</pre>
 
 You can also specify if the file should have contents copied from somewhere on your harddrive like this:
+<br/>
+<pre>
 {'file':'filename.extension', 'copy_from': "path_to_file_to_copy_contents_from"}
+</pre>
 
 Or if you want to download contents from the web and put in your file you do like this:
+<pre>
 {'file':'filename.extension', 'url': "url-to-file"}
+</ptr>
 
-
-*FOLDERS
+*FOLDERS*
 Folders look pretty much like the whole scaffold, they have two attributes:
 folder - which is the folder name
 contents - what the folder should contain
 
 So a folder could look something like this:
-
+<pre>
 {
     "folder":"src",
     "contents": [
         {'file':'filename.extension'}        
     ]
 }
+</pre>
