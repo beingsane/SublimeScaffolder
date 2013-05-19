@@ -1,24 +1,5 @@
 [
     {
-        "id": "edit",
-        "children":
-        [
-            {
-                "id": "sublime_scaffolder",
-                "caption": "Scaffolder",
-                "children":
-                [
-                    {
-                        "caption": "test",
-                        "command": "sublime_scaffolder",
-                        "args": {"index": "bajs"}
-                    }
-                ]
-            }
-
-        ]
-    },
-    {
         "caption": "Preferences",
         "mnemonic": "n",
         "id": "preferences",

@@ -1,6 +1,13 @@
 SublimeScaffolder first steps:
   ✔ Load at runtime @done (13-05-18 13:46)
-  ☐ Create menu entries. 
+  ✔ Create menu entries. @done (13-05-18 14:24)
   ☐ Create submenu entries based on defined scaffolds
-  ☐ Create necessary settings and configurations files
-  ☐ Read from configuration-file
+  ✔ Create necessary settings and configurations files @done (13-05-18 14:24)
+  ✔ Read from configuration-file @done (13-05-18 14:24)
+
+SublimeScaffolder development:
+ ☐ Decide how a scaffold shold be defined
+   ☐ Create directories and files on passed path
+   ☐ Copy files from decided path
+   ☐ Download files from the internet
+   ☐ Dynamically fill the menu with scaffolds from the configuration.

@@ -1,2 +1,51 @@
 {
+    "default_folder": "F:/Projects/",
+    "scaffolds": [
+        {
+            "name": "Simple PHP Project",
+            "contents": [
+                {"file":"index.php"},
+                {"file":"config.php"},
+                {"file":"README.txt"},
+                {
+                    "folder":"resources",
+                    "contents": [
+                        {
+                            "folder":"style",
+                            "contents": [
+                                {"file":"main.css"},
+                                {"file":"mobile.css"},
+                                {"file":"bootstrap.css", "copy_from":"H:/server/www/sites/pruned/svenskapache/wp-content/themes/twentyten/style.css"}
+                            ]
+                        }, 
+                        {
+                            "folder":"scripts",
+                            "contents": [
+                                {"file":"interface.js"},
+                                {"file": "jquery.js", "url": "http://code.jquery.com/jquery-1.9.1.min.js"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Simple Scala Project",
+            "contents": [
+                {"file":"Main.scala"},
+                {"file":"README.txt"},
+                {
+                    "folder":"build",
+                    "contents": [
+                        {
+                            "folder":"classes"
+                        }, 
+                        {
+                            "folder":"out"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
