@@ -18,14 +18,14 @@
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/SublimeScaffolder/SublimeScaffolder.sublime-settings"
+                                    "file": "${packages}/Scaffolder/SublimeScaffolder.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
                             },
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/User/SublimeScaffolder.sublime-settings"
+                                    "file": "${packages}/User/Scaffolder.sublime-settings"
                                 },
                                 "caption": "Settings – User"
                             },
