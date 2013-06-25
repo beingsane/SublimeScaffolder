@@ -82,6 +82,16 @@ class ScaffoldCreator(threading.Thread):
                 new_path = "%s/%s" % (path, item["folder"])
                 os.makedirs(new_path)
                 self.create_recursively(item["contents"], new_path)
+            elif "copydir" in item:
+                print "DEBUG"
+                print path
+                print item["copydir"]
+                new_path = "%s/%s" % (path, item["name"])
+                try:
+                    shutil.copytree(item["copydir"], new_path)
+                except OSError as ex:
+                    print "Could not copy directory"
+                    raise
 
     def create_file_item(self, item, path):
         file_path = "%s/%s" % (path, item["file"])

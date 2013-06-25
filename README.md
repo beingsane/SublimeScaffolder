@@ -59,6 +59,21 @@ So a folder could look something like this:
 }
 </pre>
 
+#### Copying Directories(Folders)
+Sometimes you might have a large setup, containing many default files and a default structure, in those cases the scaffolds might
+become very large to write and thus errorprone, in those cases it might be better to copy a whole folder directly into your scaffold,
+to do this use the *copydir* command:
+<pre>
+{
+    "folder":"css",
+    "contents": [
+        {"copydir": "/home/username/default", "name":"awesomeness"}
+    ]
+}
+</pre>
+This will create a directory named *awesomeness" and put the contents from */home/username/default* into that directory.
+
+
 If you get stuck you can always have a look in: Preferences -> Package Settings -> SublimeScaffolder -> Settings - Default where there is an example scaffold for you to use.
 
 
