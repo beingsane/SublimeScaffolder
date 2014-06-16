@@ -25,7 +25,7 @@
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/User/Scaffolder.sublime-settings"
+                                    "file": "${packages}/User/SublimeScaffolder.sublime-settings"
                                 },
                                 "caption": "Settings – User"
                             },
